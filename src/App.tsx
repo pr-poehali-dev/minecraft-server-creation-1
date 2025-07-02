@@ -10,6 +10,7 @@ import Rules from "./pages/Rules";
 import Settlements from "./pages/Settlements";
 import Team from "./pages/Team";
 import Map from "./pages/Map";
+import ModsPage from "./pages/ModsPage";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -28,6 +29,7 @@ const App = () => (
           <Route path="/settlements" element={<Settlements />} />
           <Route path="/team" element={<Team />} />
           <Route path="/map" element={<Map />} />
+          <Route path="/mods" element={<ModsPage />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
