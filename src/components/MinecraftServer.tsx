@@ -2,8 +2,56 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import Icon from "@/components/ui/icon";
+import { useState } from "react";
 
 export default function MinecraftServer() {
+  const [expandedRule, setExpandedRule] = useState<number | null>(null);
+
+  const rules = [
+    {
+      icon: "Shield",
+      title: "Уважение к игрокам",
+      description: "Никаких оскорблений, читов и токсичного поведения",
+      details:
+        "Относись к другим игрокам с уважением. Запрещены: оскорбления, угрозы, дискриминация по любым признакам, токсичное поведение. Нарушение карается мутом или баном в зависимости от серьезности.",
+    },
+    {
+      icon: "Home",
+      title: "Защита построек",
+      description: "Не ломай чужие строения без разрешения владельца",
+      details:
+        "Уважай чужой труд! Запрещено ломать, изменять или присваивать постройки других игроков без их согласия. Используй приватные территории для защиты своих построек.",
+    },
+    {
+      icon: "Sword",
+      title: "Честная игра",
+      description: "Запрещены любые читы, дюпы и использование багов",
+      details:
+        "Играй честно! Строго запрещено использование читов, модов дающих преимущество, дюпы предметов, эксплуатация багов. Нарушение ведет к немедленному бану без возможности разбана.",
+    },
+    {
+      icon: "MessageCircle",
+      title: "Культура общения",
+      description: "Мат и спам в чате строго запрещены",
+      details:
+        "Поддерживай дружескую атмосферу! В чате запрещены: мат, спам, флуд, КАПС, реклама сторонних ресурсов, обсуждение политики и религии. Используй личные сообщения для приватного общения.",
+    },
+    {
+      icon: "Users",
+      title: "Командная работа",
+      description: "Развивай эпохи вместе с другими игроками",
+      details:
+        "Сервер основан на кооперации! Участвуй в развитии эпох, помогай новичкам, делись ресурсами, создавай команды. Вместе мы строим удивительный мир!",
+    },
+    {
+      icon: "AlertTriangle",
+      title: "Администрация",
+      description: "Решение админов окончательное и обжалованию не подлежит",
+      details:
+        "Администрация следит за порядком на сервере. Все решения принимаются справедливо после рассмотрения ситуации. Споры с администрацией в чате запрещены. Для апелляций используй Discord.",
+    },
+  ];
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-minecraft-darker via-minecraft-dark to-slate-900">
       {/* Hero Section */}
@@ -227,43 +275,13 @@ export default function MinecraftServer() {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {[
-              {
-                icon: "Shield",
-                title: "Уважение к игрокам",
-                description:
-                  "Никаких оскорблений, читов и токсичного поведения",
-              },
-              {
-                icon: "Home",
-                title: "Защита построек",
-                description: "Не ломай чужие строения без разрешения владельца",
-              },
-              {
-                icon: "Sword",
-                title: "Честная игра",
-                description: "Запрещены любые читы, дюпы и использование багов",
-              },
-              {
-                icon: "MessageCircle",
-                title: "Культура общения",
-                description: "Мат и спам в чате строго запрещены",
-              },
-              {
-                icon: "Users",
-                title: "Командная работа",
-                description: "Развивай эпохи вместе с другими игроками",
-              },
-              {
-                icon: "AlertTriangle",
-                title: "Администрация",
-                description:
-                  "Решение админов окончательное и обжалованию не подлежит",
-              },
-            ].map((rule, index) => (
+            {rules.map((rule, index) => (
               <Card
                 key={index}
-                className="bg-minecraft-dark/30 border-minecraft-gray/20 hover:border-minecraft-green/30 transition-all hover:scale-105"
+                className="bg-minecraft-dark/30 border-minecraft-gray/20 hover:border-minecraft-green/30 transition-all hover:scale-105 cursor-pointer"
+                onClick={() =>
+                  setExpandedRule(expandedRule === index ? null : index)
+                }
               >
                 <CardContent className="p-6">
                   <div className="flex items-start gap-4">
@@ -274,13 +292,29 @@ export default function MinecraftServer() {
                         className="text-minecraft-green"
                       />
                     </div>
-                    <div>
-                      <h3 className="font-semibold text-white mb-2">
-                        {rule.title}
-                      </h3>
-                      <p className="text-sm text-minecraft-gray">
+                    <div className="flex-1">
+                      <div className="flex items-center justify-between mb-2">
+                        <h3 className="font-semibold text-white">
+                          {rule.title}
+                        </h3>
+                        <Icon
+                          name={
+                            expandedRule === index ? "ChevronUp" : "ChevronDown"
+                          }
+                          size={20}
+                          className="text-minecraft-gray"
+                        />
+                      </div>
+                      <p className="text-sm text-minecraft-gray mb-3">
                         {rule.description}
                       </p>
+                      {expandedRule === index && (
+                        <div className="mt-4 pt-4 border-t border-minecraft-gray/20">
+                          <p className="text-sm text-minecraft-gray leading-relaxed">
+                            {rule.details}
+                          </p>
+                        </div>
+                      )}
                     </div>
                   </div>
                 </CardContent>
