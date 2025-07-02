@@ -83,13 +83,12 @@ export default function MinecraftServer() {
         </div>
 
         <div className="max-w-4xl mx-auto text-center relative z-10">
-          <div className="mb-6 flex justify-center">
-            <div className="bg-minecraft-dark/50 border border-minecraft-purple/30 px-4 py-2 rounded-lg">
-              <Icon
-                name="Infinity"
-                size={32}
-                className="text-minecraft-purple"
-              />
+          <div className="mb-6 flex justify-center gap-4">
+            <div className="bg-minecraft-dark/50 border border-minecraft-orange/30 px-4 py-2 rounded-lg">
+              <Icon name="Crown" size={32} className="text-minecraft-orange" />
+            </div>
+            <div className="bg-minecraft-dark/50 border border-red-500/30 px-4 py-2 rounded-lg">
+              <Icon name="Youtube" size={32} className="text-red-500" />
             </div>
           </div>
 
