@@ -22,9 +22,19 @@ export default function MinecraftServer() {
             🔥 Сервер активен
           </Badge>
 
-          <h1 className="text-5xl md:text-7xl font-heading font-bold mb-6 bg-gradient-to-r from-minecraft-green via-minecraft-orange to-minecraft-purple bg-clip-text text-transparent">
+          <h1 className="text-5xl md:text-7xl font-heading font-bold mb-4 bg-gradient-to-r from-minecraft-green via-minecraft-orange to-minecraft-purple bg-clip-text text-transparent">
             EPOCHCRAFT
           </h1>
+
+          <div className="flex items-center justify-center gap-3 mb-6">
+            <div className="flex items-center gap-2 bg-minecraft-dark/50 px-4 py-2 rounded-full border border-minecraft-green/30">
+              <div className="w-2 h-2 bg-minecraft-green rounded-full animate-pulse"></div>
+              <Icon name="Users" size={20} className="text-minecraft-green" />
+              <span className="text-minecraft-green font-semibold text-lg">
+                247 игроков онлайн
+              </span>
+            </div>
+          </div>
 
           <p className="text-xl md:text-2xl text-gray-300 mb-4 max-w-2xl mx-auto">
             Погрузись в мир, где каждая эпоха определяет твою судьбу
@@ -56,11 +66,6 @@ export default function MinecraftServer() {
                 Все эпохи
               </a>
             </Button>
-
-            <div className="flex items-center gap-2 text-minecraft-green">
-              <Icon name="Users" size={20} />
-              <span className="font-semibold">247 игроков онлайн</span>
-            </div>
           </div>
         </div>
       </section>
