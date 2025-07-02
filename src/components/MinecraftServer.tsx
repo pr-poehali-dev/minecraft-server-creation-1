@@ -87,6 +87,9 @@ export default function MinecraftServer() {
             <div className="bg-minecraft-dark/50 border border-minecraft-orange/30 px-4 py-2 rounded-lg">
               <Icon name="Crown" size={32} className="text-minecraft-orange" />
             </div>
+            <div className="bg-minecraft-dark/50 border border-minecraft-green/30 px-4 py-2 rounded-lg">
+              <Icon name="Box" size={32} className="text-minecraft-green" />
+            </div>
             <div className="bg-minecraft-dark/50 border border-red-500/30 px-4 py-2 rounded-lg">
               <Icon name="Youtube" size={32} className="text-red-500" />
             </div>
