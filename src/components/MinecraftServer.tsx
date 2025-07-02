@@ -95,10 +95,10 @@ export default function MinecraftServer() {
 
           <div className="relative mb-4">
             <h1 className="text-5xl md:text-7xl font-heading font-bold bg-gradient-to-r from-minecraft-green/20 via-minecraft-orange/20 to-minecraft-purple/20 blur-xl scale-110 animate-pulse absolute inset-0 z-0">
-              EPOCHCRAFT
+              HISTORYCRAFT
             </h1>
             <h1 className="text-5xl md:text-7xl font-heading font-bold bg-gradient-to-r from-minecraft-green via-minecraft-orange to-minecraft-purple bg-clip-text text-transparent relative z-10">
-              EPOCHCRAFT
+              HISTORYCRAFT
             </h1>
           </div>
 
