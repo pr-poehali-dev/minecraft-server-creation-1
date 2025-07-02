@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import Icon from "@/components/ui/icon";
+import MiniLogo from "@/components/common/MiniLogo";
 
 const navigationLinks = [
   {
@@ -117,6 +118,9 @@ function HeroIcons() {
 function NeonTitle() {
   return (
     <div className="relative mb-4">
+      <div className="flex justify-center mb-6">
+        <MiniLogo />
+      </div>
       <style jsx>{`
         @keyframes rainbow-flow {
           0% {
