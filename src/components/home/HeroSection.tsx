@@ -117,13 +117,68 @@ function HeroIcons() {
 function NeonTitle() {
   return (
     <div className="relative mb-4">
-      <h1 className="text-5xl md:text-7xl font-heading font-bold bg-gradient-to-r from-pink-500/30 via-purple-500/30 to-violet-500/30 blur-2xl scale-125 animate-pulse absolute inset-0 z-0">
+      <style jsx>{`
+        @keyframes rainbow-flow {
+          0% {
+            background-position: 0% 50%;
+          }
+          50% {
+            background-position: 100% 50%;
+          }
+          100% {
+            background-position: 0% 50%;
+          }
+        }
+        .rainbow-text {
+          background: linear-gradient(
+            45deg,
+            #ff0000,
+            #ff7f00,
+            #ffff00,
+            #00ff00,
+            #0000ff,
+            #4b0082,
+            #9400d3,
+            #ff1493,
+            #00ced1,
+            #ff6347,
+            #32cd32,
+            #ff0000
+          );
+          background-size: 800% 800%;
+          animation: rainbow-flow 3s ease-in-out infinite;
+          -webkit-background-clip: text;
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+        .rainbow-glow {
+          background: linear-gradient(
+            45deg,
+            #ff0000/30,
+            #ff7f00/30,
+            #ffff00/30,
+            #00ff00/30,
+            #0000ff/30,
+            #4b0082/30,
+            #9400d3/30,
+            #ff1493/30,
+            #00ced1/30,
+            #ff6347/30,
+            #32cd32/30,
+            #ff0000/30
+          );
+          background-size: 800% 800%;
+          animation: rainbow-flow 3s ease-in-out infinite;
+        }
+      `}</style>
+
+      <h1 className="text-5xl md:text-7xl font-heading font-bold rainbow-glow blur-2xl scale-125 absolute inset-0 z-0">
         HISTORYCRAFT
       </h1>
-      <h1 className="text-5xl md:text-7xl font-heading font-bold bg-gradient-to-r from-pink-400 via-purple-400 to-violet-400 bg-clip-text text-transparent relative z-10 drop-shadow-[0_0_20px_rgba(236,72,153,0.5)] animate-pulse">
+      <h1 className="text-5xl md:text-7xl font-heading font-bold rainbow-text relative z-10 drop-shadow-[0_0_30px_rgba(255,255,255,0.8)]">
         HISTORYCRAFT
       </h1>
-      <div className="absolute inset-0 bg-gradient-to-r from-pink-500/20 via-purple-500/30 to-violet-500/20 blur-3xl animate-pulse z-0" />
+      <div className="absolute inset-0 rainbow-glow blur-3xl z-0 opacity-50" />
     </div>
   );
 }
