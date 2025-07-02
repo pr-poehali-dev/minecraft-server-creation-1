@@ -72,6 +72,18 @@ export default function MinecraftServer() {
                 Все эпохи
               </a>
             </Button>
+
+            <Button
+              size="lg"
+              variant="outline"
+              className="border-minecraft-green text-minecraft-green hover:bg-minecraft-green hover:text-white px-8 py-4 text-lg font-semibold rounded-lg transition-all hover:scale-105"
+              asChild
+            >
+              <a href="/settlements">
+                <Icon name="MapPin" size={20} className="mr-2" />
+                Страны и города
+              </a>
+            </Button>
           </div>
         </div>
       </section>
@@ -337,17 +349,6 @@ export default function MinecraftServer() {
             © 2024 EpochCraft. Лучший Minecraft сервер с эволюционными эпохами
           </p>
           <div className="flex justify-center gap-6 mt-4">
-            <Button
-              variant="ghost"
-              size="sm"
-              className="text-minecraft-gray hover:text-white"
-              asChild
-            >
-              <a href="/settlements">
-                <Icon name="MapPin" size={16} className="mr-2" />
-                Страны и города
-              </a>
-            </Button>
             <Button
               variant="ghost"
               size="sm"
