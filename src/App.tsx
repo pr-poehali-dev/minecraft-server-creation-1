@@ -12,6 +12,7 @@ import Team from "./pages/Team";
 import Map from "./pages/Map";
 import ModsPage from "./pages/ModsPage";
 import Players from "./pages/Players";
+import Creators from "./pages/Creators";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -32,6 +33,7 @@ const App = () => (
           <Route path="/map" element={<Map />} />
           <Route path="/mods" element={<ModsPage />} />
           <Route path="/players" element={<Players />} />
+          <Route path="/creators" element={<Creators />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
