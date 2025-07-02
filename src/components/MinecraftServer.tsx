@@ -150,36 +150,6 @@ export default function MinecraftServer() {
         </div>
       </section>
 
-      {/* Donation Packages */}
-      <section className="py-16 px-4 bg-gradient-to-b from-minecraft-dark/50 to-minecraft-darker/50">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-12">
-            <Badge className="mb-4 bg-gradient-to-r from-yellow-500/20 to-orange-500/20 text-yellow-400 border-yellow-500/30">
-              💎 Поддержка сервера
-            </Badge>
-            <h2 className="text-4xl font-heading font-bold text-white mb-4">
-              Донат пакеты
-            </h2>
-            <p className="text-gray-300 max-w-2xl mx-auto">
-              Поддержи развитие сервера и получи уникальные привилегии для более
-              комфортной игры
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {donatePackages.map((pkg) => (
-              <DonateCard key={pkg.id} donatePackage={pkg} />
-            ))}
-          </div>
-
-          <div className="text-center mt-8">
-            <p className="text-gray-400 text-sm">
-              💡 Нажмите на карточку, чтобы увидеть подробности
-            </p>
-          </div>
-        </div>
-      </section>
-
       {/* Current Epoch */}
       <section className="py-16 px-4">
         <div className="max-w-6xl mx-auto">
