@@ -137,9 +137,19 @@ export default function MinecraftServer() {
             <h2 className="text-4xl font-heading font-bold text-white mb-4">
               Правила сервера
             </h2>
-            <p className="text-minecraft-gray text-lg">
+            <p className="text-minecraft-gray text-lg mb-4">
               Простые правила для комфортной игры всех участников
             </p>
+            <Button
+              variant="outline"
+              className="border-minecraft-green text-minecraft-green hover:bg-minecraft-green hover:text-white"
+              asChild
+            >
+              <a href="/rules">
+                <Icon name="ScrollText" size={16} className="mr-2" />
+                Все правила
+              </a>
+            </Button>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
