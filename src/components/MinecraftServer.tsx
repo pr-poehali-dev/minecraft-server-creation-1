@@ -17,6 +17,23 @@ export default function MinecraftServer() {
           ></div>
         </div>
 
+        <div className="absolute inset-0 overflow-hidden">
+          <div className="stars-container">
+            {[...Array(50)].map((_, i) => (
+              <div
+                key={i}
+                className="star"
+                style={{
+                  left: `${Math.random() * 100}%`,
+                  top: `${Math.random() * 100}%`,
+                  animationDelay: `${Math.random() * 3}s`,
+                  animationDuration: `${2 + Math.random() * 2}s`,
+                }}
+              />
+            ))}
+          </div>
+        </div>
+
         <div className="max-w-4xl mx-auto text-center relative z-10">
           <div className="mb-6 flex justify-center">
             <div className="bg-minecraft-dark/50 border border-minecraft-purple/30 px-4 py-2 rounded-lg">
