@@ -341,6 +341,17 @@ export default function MinecraftServer() {
               variant="ghost"
               size="sm"
               className="text-minecraft-gray hover:text-white"
+              asChild
+            >
+              <a href="/settlements">
+                <Icon name="MapPin" size={16} className="mr-2" />
+                Страны и города
+              </a>
+            </Button>
+            <Button
+              variant="ghost"
+              size="sm"
+              className="text-minecraft-gray hover:text-white"
             >
               <Icon name="MessageCircle" size={16} className="mr-2" />
               Discord
