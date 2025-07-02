@@ -96,6 +96,18 @@ export default function MinecraftServer() {
                 Наша команда
               </a>
             </Button>
+
+            <Button
+              size="lg"
+              variant="outline"
+              className="border-minecraft-blue text-minecraft-blue hover:bg-minecraft-blue hover:text-white px-8 py-4 text-lg font-semibold rounded-lg transition-all hover:scale-105"
+              asChild
+            >
+              <a href="/map">
+                <Icon name="Map" size={20} className="mr-2" />
+                Онлайн карта
+              </a>
+            </Button>
           </div>
         </div>
       </section>
