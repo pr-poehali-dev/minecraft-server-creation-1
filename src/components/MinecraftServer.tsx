@@ -460,9 +460,31 @@ export default function MinecraftServer() {
               variant="ghost"
               size="sm"
               className="text-minecraft-gray hover:text-white"
+              asChild
             >
-              <Icon name="MessageCircle" size={16} className="mr-2" />
-              Discord
+              <a
+                href="https://discord.gg/historycraft"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Icon name="MessageCircle" size={16} className="mr-2" />
+                Discord
+              </a>
+            </Button>
+            <Button
+              variant="ghost"
+              size="sm"
+              className="text-red-500 hover:text-red-400"
+              asChild
+            >
+              <a
+                href="https://youtube.com/@historycraft"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Icon name="Youtube" size={16} className="mr-2" />
+                YouTube
+              </a>
             </Button>
             <Button
               variant="ghost"
