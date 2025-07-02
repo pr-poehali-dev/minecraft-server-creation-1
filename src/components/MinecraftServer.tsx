@@ -28,11 +28,14 @@ export default function MinecraftServer() {
             </div>
           </div>
 
-          <h1 className="text-5xl md:text-7xl font-heading font-bold mb-4 bg-gradient-to-r from-minecraft-green via-minecraft-orange to-minecraft-purple bg-clip-text text-transparent relative">
-            <span className="relative z-10">EPOCHCRAFT</span>
-            <div className="absolute inset-0 bg-gradient-to-r from-minecraft-green/20 via-minecraft-orange/20 to-minecraft-purple/20 blur-xl scale-110 animate-pulse"></div>
-            <div className="absolute inset-0 bg-gradient-to-r from-minecraft-green/10 via-minecraft-orange/10 to-minecraft-purple/10 blur-2xl scale-125"></div>
-          </h1>
+          <div className="relative mb-4">
+            <h1 className="text-5xl md:text-7xl font-heading font-bold bg-gradient-to-r from-minecraft-green/20 via-minecraft-orange/20 to-minecraft-purple/20 blur-xl scale-110 animate-pulse absolute inset-0 z-0">
+              EPOCHCRAFT
+            </h1>
+            <h1 className="text-5xl md:text-7xl font-heading font-bold bg-gradient-to-r from-minecraft-green via-minecraft-orange to-minecraft-purple bg-clip-text text-transparent relative z-10">
+              EPOCHCRAFT
+            </h1>
+          </div>
 
           <div className="flex items-center justify-center gap-3 mb-6">
             <div className="flex items-center gap-2 bg-minecraft-dark/50 px-4 py-2 rounded-full border border-minecraft-green/30">
