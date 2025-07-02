@@ -175,6 +175,18 @@ export default function MinecraftServer() {
               <Button
                 size="lg"
                 variant="outline"
+                className="border-red-500 text-red-500 hover:bg-red-500 hover:text-white px-8 py-4 text-lg font-semibold rounded-lg transition-all hover:scale-105"
+                asChild
+              >
+                <a href="/creators">
+                  <Icon name="Video" size={20} className="mr-2" />
+                  Контентмейкеры
+                </a>
+              </Button>
+
+              <Button
+                size="lg"
+                variant="outline"
                 className="border-minecraft-green text-minecraft-green hover:bg-minecraft-green hover:text-white px-8 py-4 text-lg font-semibold rounded-lg transition-all hover:scale-105"
                 asChild
               >
