@@ -96,12 +96,13 @@ export default function MinecraftServer() {
           </div>
 
           <div className="relative mb-4">
-            <h1 className="text-5xl md:text-7xl font-heading font-bold bg-gradient-to-r from-minecraft-green/20 via-minecraft-orange/20 to-minecraft-purple/20 blur-xl scale-110 animate-pulse absolute inset-0 z-0">
+            <h1 className="text-5xl md:text-7xl font-heading font-bold bg-gradient-to-r from-pink-500/30 via-purple-500/30 to-violet-500/30 blur-2xl scale-125 animate-pulse absolute inset-0 z-0">
               HISTORYCRAFT
             </h1>
-            <h1 className="text-5xl md:text-7xl font-heading font-bold bg-gradient-to-r from-minecraft-green via-minecraft-orange to-minecraft-purple bg-clip-text text-transparent relative z-10">
+            <h1 className="text-5xl md:text-7xl font-heading font-bold bg-gradient-to-r from-pink-400 via-purple-400 to-violet-400 bg-clip-text text-transparent relative z-10 drop-shadow-[0_0_20px_rgba(236,72,153,0.5)] animate-pulse">
               HISTORYCRAFT
             </h1>
+            <div className="absolute inset-0 bg-gradient-to-r from-pink-500/20 via-purple-500/30 to-violet-500/20 blur-3xl animate-pulse z-0"></div>
           </div>
 
           <div className="flex items-center justify-center gap-3 mb-6">
