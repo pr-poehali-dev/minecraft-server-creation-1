@@ -57,74 +57,78 @@ export default function MinecraftServer() {
             эпохи!
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Button
-              size="lg"
-              className="bg-minecraft-green hover:bg-minecraft-green/80 text-white px-8 py-4 text-lg font-semibold rounded-lg transition-all hover:scale-105"
-            >
-              <Icon name="Play" size={20} className="mr-2" />
-              Играть сейчас
-            </Button>
+          <div className="flex flex-col gap-6 justify-center items-center">
+            <div className="flex justify-center">
+              <Button
+                size="lg"
+                className="bg-minecraft-green hover:bg-minecraft-green/80 text-white px-8 py-4 text-lg font-semibold rounded-lg transition-all hover:scale-105"
+              >
+                <Icon name="Play" size={20} className="mr-2" />
+                Играть сейчас
+              </Button>
+            </div>
 
-            <Button
-              size="lg"
-              variant="outline"
-              className="border-minecraft-orange text-minecraft-orange hover:bg-minecraft-orange hover:text-white px-8 py-4 text-lg font-semibold rounded-lg transition-all hover:scale-105"
-              asChild
-            >
-              <a href="/mods">
-                <Icon name="Package" size={20} className="mr-2" />
-                Моды
-              </a>
-            </Button>
+            <div className="flex flex-col sm:flex-row flex-wrap gap-4 justify-center items-center">
+              <Button
+                size="lg"
+                variant="outline"
+                className="border-minecraft-orange text-minecraft-orange hover:bg-minecraft-orange hover:text-white px-8 py-4 text-lg font-semibold rounded-lg transition-all hover:scale-105"
+                asChild
+              >
+                <a href="/mods">
+                  <Icon name="Package" size={20} className="mr-2" />
+                  Моды
+                </a>
+              </Button>
 
-            <Button
-              size="lg"
-              variant="outline"
-              className="border-minecraft-purple text-minecraft-purple hover:bg-minecraft-purple hover:text-white px-8 py-4 text-lg font-semibold rounded-lg transition-all hover:scale-105"
-              asChild
-            >
-              <a href="/epochs">
-                <Icon name="Clock" size={20} className="mr-2" />
-                Все эпохи
-              </a>
-            </Button>
+              <Button
+                size="lg"
+                variant="outline"
+                className="border-minecraft-purple text-minecraft-purple hover:bg-minecraft-purple hover:text-white px-8 py-4 text-lg font-semibold rounded-lg transition-all hover:scale-105"
+                asChild
+              >
+                <a href="/epochs">
+                  <Icon name="Clock" size={20} className="mr-2" />
+                  Все эпохи
+                </a>
+              </Button>
 
-            <Button
-              size="lg"
-              variant="outline"
-              className="border-minecraft-green text-minecraft-green hover:bg-minecraft-green hover:text-white px-8 py-4 text-lg font-semibold rounded-lg transition-all hover:scale-105"
-              asChild
-            >
-              <a href="/settlements">
-                <Icon name="MapPin" size={20} className="mr-2" />
-                Страны и города
-              </a>
-            </Button>
+              <Button
+                size="lg"
+                variant="outline"
+                className="border-minecraft-green text-minecraft-green hover:bg-minecraft-green hover:text-white px-8 py-4 text-lg font-semibold rounded-lg transition-all hover:scale-105"
+                asChild
+              >
+                <a href="/settlements">
+                  <Icon name="MapPin" size={20} className="mr-2" />
+                  Страны и города
+                </a>
+              </Button>
 
-            <Button
-              size="lg"
-              variant="outline"
-              className="border-minecraft-orange text-minecraft-orange hover:bg-minecraft-orange hover:text-white px-8 py-4 text-lg font-semibold rounded-lg transition-all hover:scale-105"
-              asChild
-            >
-              <a href="/team">
-                <Icon name="Users" size={20} className="mr-2" />
-                Наша команда
-              </a>
-            </Button>
+              <Button
+                size="lg"
+                variant="outline"
+                className="border-minecraft-orange text-minecraft-orange hover:bg-minecraft-orange hover:text-white px-8 py-4 text-lg font-semibold rounded-lg transition-all hover:scale-105"
+                asChild
+              >
+                <a href="/team">
+                  <Icon name="Users" size={20} className="mr-2" />
+                  Наша команда
+                </a>
+              </Button>
 
-            <Button
-              size="lg"
-              variant="outline"
-              className="border-minecraft-blue text-minecraft-blue hover:bg-minecraft-blue hover:text-white px-8 py-4 text-lg font-semibold rounded-lg transition-all hover:scale-105"
-              asChild
-            >
-              <a href="/map">
-                <Icon name="Map" size={20} className="mr-2" />
-                Онлайн карта
-              </a>
-            </Button>
+              <Button
+                size="lg"
+                variant="outline"
+                className="border-minecraft-blue text-minecraft-blue hover:bg-minecraft-blue hover:text-white px-8 py-4 text-lg font-semibold rounded-lg transition-all hover:scale-105"
+                asChild
+              >
+                <a href="/map">
+                  <Icon name="Map" size={20} className="mr-2" />
+                  Онлайн карта
+                </a>
+              </Button>
+            </div>
           </div>
         </div>
       </section>
