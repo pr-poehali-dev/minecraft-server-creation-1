@@ -202,9 +202,19 @@ export default function MinecraftServer() {
             <h2 className="text-4xl font-heading font-bold text-white mb-4">
               Поддержать сервер
             </h2>
-            <p className="text-minecraft-gray text-lg">
+            <p className="text-minecraft-gray text-lg mb-4">
               Помоги развитию сервера и получи крутые привилегии!
             </p>
+            <Button
+              variant="outline"
+              className="border-minecraft-purple text-minecraft-purple hover:bg-minecraft-purple hover:text-white"
+              asChild
+            >
+              <a href="/privileges">
+                <Icon name="Eye" size={16} className="mr-2" />
+                Подробнее о привилегиях
+              </a>
+            </Button>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
@@ -288,8 +298,9 @@ export default function MinecraftServer() {
 
                   <Button
                     className={`w-full bg-${plan.color} hover:bg-${plan.color}/80 text-white`}
+                    asChild
                   >
-                    Купить привилегию
+                    <a href="/privileges">Купить привилегию</a>
                   </Button>
                 </CardContent>
               </Card>
