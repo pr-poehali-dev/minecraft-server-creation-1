@@ -18,9 +18,15 @@ export default function MinecraftServer() {
         </div>
 
         <div className="max-w-4xl mx-auto text-center relative z-10">
-          <Badge className="mb-6 px-4 py-2 text-lg bg-minecraft-green/20 text-minecraft-green border-minecraft-green/30 hover:bg-minecraft-green/30">
-            🔥 Сервер активен
-          </Badge>
+          <div className="mb-6 flex justify-center">
+            <div className="bg-minecraft-dark/50 border border-minecraft-purple/30 px-4 py-2 rounded-lg">
+              <Icon
+                name="Infinity"
+                size={32}
+                className="text-minecraft-purple"
+              />
+            </div>
+          </div>
 
           <h1 className="text-5xl md:text-7xl font-heading font-bold mb-4 bg-gradient-to-r from-minecraft-green via-minecraft-orange to-minecraft-purple bg-clip-text text-transparent">
             EPOCHCRAFT
