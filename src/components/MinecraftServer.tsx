@@ -69,6 +69,18 @@ export default function MinecraftServer() {
             <Button
               size="lg"
               variant="outline"
+              className="border-minecraft-orange text-minecraft-orange hover:bg-minecraft-orange hover:text-white px-8 py-4 text-lg font-semibold rounded-lg transition-all hover:scale-105"
+              asChild
+            >
+              <a href="/mods">
+                <Icon name="Package" size={20} className="mr-2" />
+                Моды
+              </a>
+            </Button>
+
+            <Button
+              size="lg"
+              variant="outline"
               className="border-minecraft-purple text-minecraft-purple hover:bg-minecraft-purple hover:text-white px-8 py-4 text-lg font-semibold rounded-lg transition-all hover:scale-105"
               asChild
             >
