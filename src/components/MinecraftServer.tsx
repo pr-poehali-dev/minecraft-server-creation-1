@@ -164,6 +164,18 @@ export default function MinecraftServer() {
                 className="border-minecraft-green text-minecraft-green hover:bg-minecraft-green hover:text-white px-8 py-4 text-lg font-semibold rounded-lg transition-all hover:scale-105"
                 asChild
               >
+                <a href="/players">
+                  <Icon name="Users" size={20} className="mr-2" />
+                  Игроки
+                </a>
+              </Button>
+
+              <Button
+                size="lg"
+                variant="outline"
+                className="border-minecraft-green text-minecraft-green hover:bg-minecraft-green hover:text-white px-8 py-4 text-lg font-semibold rounded-lg transition-all hover:scale-105"
+                asChild
+              >
                 <a href="/settlements">
                   <Icon name="MapPin" size={20} className="mr-2" />
                   Страны и города
