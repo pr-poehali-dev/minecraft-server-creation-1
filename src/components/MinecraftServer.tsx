@@ -45,6 +45,18 @@ export default function MinecraftServer() {
               Играть сейчас
             </Button>
 
+            <Button
+              size="lg"
+              variant="outline"
+              className="border-minecraft-purple text-minecraft-purple hover:bg-minecraft-purple hover:text-white px-8 py-4 text-lg font-semibold rounded-lg transition-all hover:scale-105"
+              asChild
+            >
+              <a href="/epochs">
+                <Icon name="Clock" size={20} className="mr-2" />
+                Все эпохи
+              </a>
+            </Button>
+
             <div className="flex items-center gap-2 text-minecraft-green">
               <Icon name="Users" size={20} />
               <span className="font-semibold">247 игроков онлайн</span>
