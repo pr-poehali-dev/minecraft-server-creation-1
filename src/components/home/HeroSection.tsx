@@ -146,7 +146,7 @@ function NeonTitle() {
             #ff0000
           );
           background-size: 800% 800%;
-          animation: rainbow-flow 3s ease-in-out infinite;
+          animation: rainbow-flow 10s ease-in-out infinite;
           -webkit-background-clip: text;
           background-clip: text;
           -webkit-text-fill-color: transparent;
@@ -168,7 +168,7 @@ function NeonTitle() {
             #ff0000/30
           );
           background-size: 800% 800%;
-          animation: rainbow-flow 3s ease-in-out infinite;
+          animation: rainbow-flow 10s ease-in-out infinite;
         }
       `}</style>
 
